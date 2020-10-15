@@ -143,7 +143,7 @@ public class RecipeActivity extends Activity {
             toast.show();
         }
 
-//        if (recipe != null) {
+        if (recipe != null) {
 //            // Create the adapter that will return a fragment for each of the steps of the recipe.
 //            mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 //
@@ -151,14 +151,14 @@ public class RecipeActivity extends Activity {
 //            mViewPager = (ViewPager2) findViewById(R.id.pager);
 //            mViewPager.setAdapter(mSectionsPagerAdapter);
 //
-//            // Set the recipe title
-//            TextView recipeTitle = (TextView) findViewById(R.id.recipeTitle);
-//            recipeTitle.setText(recipe.getTitle());
-//
-//            // Set the recipe prep time
-//            TextView recipeTime = (TextView) findViewById(R.id.recipeTime);
-//            recipeTime.setText("  " + recipe.getPrepTime());
-//        }
+            // Set the recipe title
+            TextView recipeTitle = (TextView) findViewById(R.id.recipeTitle);
+            recipeTitle.setText(recipe.getTitle());
+
+            // Set the recipe prep time
+            TextView recipeTime = (TextView) findViewById(R.id.recipeTime);
+            recipeTime.setText("  " + recipe.getPrepTime());
+        }
     }
 
     /**
